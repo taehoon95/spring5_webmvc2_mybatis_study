@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 //view용
 @Configuration
-@EnableWebMvc
+@EnableWebMvc // HandlerMapping, HandlerAdapter클래스를 빈으로 등록(그 외에 매우 다양한 스프링 빈 설정을 추가)
 public class MvcConfig implements WebMvcConfigurer {
 	
 	/*DispatcherServlet의 매핑경로를 '/' 주었을 때, JSP/HTML/CSS 등을 올바르게 처리하기 위한 설정 추가 */
@@ -26,7 +26,8 @@ public class MvcConfig implements WebMvcConfigurer {
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		registry.jsp("/WEB-INF/view/", ".jsp");
 	}
-	
+
+	/* 메인으로 바로 보내기*/
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/main").setViewName("main");

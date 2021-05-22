@@ -1,10 +1,7 @@
 package spring5_webmvc2_mybatis_study.mapper;
 
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
-import org.apache.ibatis.type.LocalDateTimeTypeHandler;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
@@ -14,6 +11,7 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import spring5_webmvc2_mybatis_study.config.ContextRoot;
 import spring5_webmvc2_mybatis_study.dto.Member;
@@ -21,6 +19,7 @@ import spring5_webmvc2_mybatis_study.dto.Member;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ContextRoot.class})
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@WebAppConfiguration
 public class MemberDaoTest {
 
 	
@@ -60,6 +59,7 @@ public class MemberDaoTest {
 	public void test05CountMember() {
 		System.out.println("test05CountMember");
 		int res = mapper.countMember();
+		Assert.assertNotEquals(-1, res);
 		System.out.println(res);
 	}
 	

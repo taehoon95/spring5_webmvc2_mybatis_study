@@ -35,7 +35,6 @@ public class ContextDataSource {
 	      HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 
 	      return dataSource;
-
 	   }
 	
 	@Bean
