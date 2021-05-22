@@ -11,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//DB에 sql사용 할려고
 @Configuration
 @MapperScan("spring5_webmvc2_mybatis_study.mapper")
 public class ContextSqlSession {
