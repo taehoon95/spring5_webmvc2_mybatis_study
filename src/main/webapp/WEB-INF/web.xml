@@ -25,7 +25,6 @@
 				<param-value>
 						spring5_webmvc2_mybatis_study.config.ContextRoot
 						spring5_webmvc2_mybatis_study.config.MvcConfig
-						spring5_webmvc2_mybatis_study.config.ControllerConfig
 				</param-value>
 			</init-param>
 		<load-on-startup>1</load-on-startup>
