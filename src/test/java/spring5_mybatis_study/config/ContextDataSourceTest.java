@@ -15,6 +15,7 @@ import spring5_webmvc2_mybatis_study.config.ContextRoot;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ContextRoot.class})
+@WebAppConfiguration
 public class ContextDataSourceTest {
 
 	

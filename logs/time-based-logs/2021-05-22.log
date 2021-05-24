@@ -1,0 +1,891 @@
+[DEBUG] [2021-05-22 13:57] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:57] ==> Parameters: 
+[TRACE] [2021-05-22 13:57] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:57] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 13:57] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 13:57] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 13:57] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 13:57] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 13:57] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 13:57] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 13:57] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 13:57] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 13:57] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 13:57] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 13:57] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 13:57] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 13:57] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 13:57] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 13:57] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 13:57] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 13:57] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 13:57] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 13:57] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 13:57] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 13:57] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 13:57] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 13:57] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 13:57] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 13:57] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 13:57] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 13:57] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 13:57] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 13:57] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 13:57] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 13:57] <==      Total: 31
+[DEBUG] [2021-05-22 13:57] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:57] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 13:57] <==    Updates: 1
+[DEBUG] [2021-05-22 13:57] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:57] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 13:57] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:57] <==        Row: 66, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 13:57] <==      Total: 1
+[DEBUG] [2021-05-22 13:57] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:57] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 13:57] <==    Updates: 1
+[DEBUG] [2021-05-22 13:57] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:57] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 13:57] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 
+[TRACE] [2021-05-22 13:58] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:58] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 13:58] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 13:58] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 13:58] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 13:58] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 13:58] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 13:58] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 13:58] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 13:58] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 13:58] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 13:58] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 13:58] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 13:58] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 13:58] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 13:58] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 13:58] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 13:58] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 13:58] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 13:58] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 13:58] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 13:58] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 13:58] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 13:58] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 13:58] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 13:58] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 13:58] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 13:58] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 13:58] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 13:58] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 13:58] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 13:58] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 13:58] <==      Total: 31
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 13:58] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:58] <==        Row: 67, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 13:58] <==      Total: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 
+[TRACE] [2021-05-22 13:58] <==    Columns: count(*)
+[TRACE] [2021-05-22 13:58] <==        Row: 32
+[DEBUG] [2021-05-22 13:58] <==      Total: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:00] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:00] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:00] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:00] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:00] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:00] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:00] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:00] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:00] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:00] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:00] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:00] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:00] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:00] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:00] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:00] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:00] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:00] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:00] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:00] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:00] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:00] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:00] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:00] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:00] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:00] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:00] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:00] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:00] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:00] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:00] <==      Total: 31
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 68, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:00] <==        Row: 32
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 
+[TRACE] [2021-05-22 14:07] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:07] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:07] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:07] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:07] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:07] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:07] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:07] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:07] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:07] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:07] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:07] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:07] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:07] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:07] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:07] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:07] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:07] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:07] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:07] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:07] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:07] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:07] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:07] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:07] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:07] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:07] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:07] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:07] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:07] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:07] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:07] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:07] <==      Total: 31
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:07] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:07] <==        Row: 69, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:07] <==      Total: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select count(id) from member
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 
+[TRACE] [2021-05-22 14:07] <==    Columns: count(id)
+[TRACE] [2021-05-22 14:07] <==        Row: 32
+[DEBUG] [2021-05-22 14:07] <==      Total: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 
+[TRACE] [2021-05-22 14:07] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:07] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:07] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:07] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:07] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:07] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:07] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:07] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:07] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:07] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:07] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:07] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:07] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:07] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:07] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:07] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:07] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:07] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:07] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:07] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:07] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:07] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:07] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:07] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:07] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:07] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:07] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:07] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:07] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:07] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:07] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:07] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:07] <==      Total: 31
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:07] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:07] <==        Row: 70, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:07] <==      Total: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: select count(id) from member
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 
+[TRACE] [2021-05-22 14:07] <==    Columns: count(id)
+[TRACE] [2021-05-22 14:07] <==        Row: 32
+[DEBUG] [2021-05-22 14:07] <==      Total: 1
+[DEBUG] [2021-05-22 14:07] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:07] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:07] <==    Updates: 1
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 
+[TRACE] [2021-05-22 14:08] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:08] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:08] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:08] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:08] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:08] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:08] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:08] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:08] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:08] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:08] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:08] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:08] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:08] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:08] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:08] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:08] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:08] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:08] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:08] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:08] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:08] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:08] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:08] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:08] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:08] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:08] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:08] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:08] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:08] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:08] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:08] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:08] <==      Total: 31
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:08] <==    Updates: 1
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:08] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:08] <==        Row: 71, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:08] <==      Total: 1
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:08] <==    Updates: 1
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: select count(id) from member
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 
+[TRACE] [2021-05-22 14:08] <==    Columns: count(id)
+[TRACE] [2021-05-22 14:08] <==        Row: 32
+[DEBUG] [2021-05-22 14:08] <==      Total: 1
+[DEBUG] [2021-05-22 14:08] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:08] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:08] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 
+[TRACE] [2021-05-22 14:11] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:11] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:11] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:11] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:11] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:11] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:11] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:11] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:11] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:11] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:11] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:11] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:11] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:11] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:11] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:11] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:11] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:11] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:11] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:11] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:11] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:11] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:11] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:11] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:11] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:11] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:11] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:11] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:11] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:11] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:11] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:11] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:11] <==      Total: 31
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:11] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:11] <==        Row: 72, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:11] <==      Total: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 
+[TRACE] [2021-05-22 14:11] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:11] <==        Row: 32
+[DEBUG] [2021-05-22 14:11] <==      Total: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 
+[TRACE] [2021-05-22 14:11] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:11] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:11] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:11] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:11] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:11] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:11] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:11] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:11] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:11] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:11] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:11] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:11] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:11] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:11] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:11] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:11] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:11] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:11] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:11] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:11] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:11] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:11] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:11] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:11] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:11] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:11] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:11] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:11] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:11] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:11] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:11] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:11] <==      Total: 31
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:11] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:11] <==        Row: 73, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:11] <==      Total: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 
+[TRACE] [2021-05-22 14:11] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:11] <==        Row: 32
+[DEBUG] [2021-05-22 14:11] <==      Total: 1
+[DEBUG] [2021-05-22 14:11] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:11] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:11] <==    Updates: 1
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 
+[TRACE] [2021-05-22 14:14] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:14] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:14] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:14] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:14] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:14] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:14] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:14] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:14] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:14] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:14] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:14] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:14] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:14] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:14] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:14] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:14] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:14] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:14] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:14] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:14] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:14] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:14] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:14] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:14] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:14] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:14] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:14] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:14] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:14] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:14] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:14] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:14] <==      Total: 31
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:14] <==    Updates: 1
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:14] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:14] <==        Row: 74, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:14] <==      Total: 1
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:14] <==    Updates: 1
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 
+[TRACE] [2021-05-22 14:14] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:14] <==        Row: 32
+[DEBUG] [2021-05-22 14:14] <==      Total: 1
+[DEBUG] [2021-05-22 14:14] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:14] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:14] <==    Updates: 1
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 
+[TRACE] [2021-05-22 14:17] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:17] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:17] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:17] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:17] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:17] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:17] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:17] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:17] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:17] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:17] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:17] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:17] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:17] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:17] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:17] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:17] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:17] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:17] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:17] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:17] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:17] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:17] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:17] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:17] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:17] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:17] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:17] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:17] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:17] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:17] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:17] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:17] <==      Total: 31
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:17] <==    Updates: 1
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:17] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:17] <==        Row: 75, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:17] <==      Total: 1
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:17] <==    Updates: 1
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 
+[TRACE] [2021-05-22 14:17] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:17] <==        Row: 32
+[DEBUG] [2021-05-22 14:17] <==      Total: 1
+[DEBUG] [2021-05-22 14:17] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:17] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:17] <==    Updates: 1
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 
+[TRACE] [2021-05-22 14:19] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:19] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:19] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:19] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:19] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:19] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:19] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:19] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:19] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:19] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:19] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:19] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:19] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:19] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:19] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:19] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:19] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:19] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:19] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:19] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:19] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:19] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:19] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:19] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:19] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:19] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:19] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:19] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:19] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:19] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:19] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:19] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:19] <==      Total: 31
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:19] <==    Updates: 1
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:19] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:19] <==        Row: 76, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:19] <==      Total: 1
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:19] <==    Updates: 1
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 
+[TRACE] [2021-05-22 14:19] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:19] <==        Row: 32
+[DEBUG] [2021-05-22 14:19] <==      Total: 1
+[DEBUG] [2021-05-22 14:19] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:19] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:19] <==    Updates: 1
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 
+[TRACE] [2021-05-22 14:21] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:21] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:21] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:21] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:21] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:21] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:21] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:21] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:21] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:21] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:21] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:21] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:21] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:21] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:21] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:21] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:21] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:21] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:21] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:21] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:21] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:21] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:21] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:21] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:21] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:21] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:21] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:21] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:21] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:21] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:21] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:21] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:21] <==      Total: 31
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:21] <==    Updates: 1
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:21] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:21] <==        Row: 77, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:21] <==      Total: 1
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:21] <==    Updates: 1
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 
+[TRACE] [2021-05-22 14:21] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:21] <==        Row: 32
+[DEBUG] [2021-05-22 14:21] <==      Total: 1
+[DEBUG] [2021-05-22 14:21] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:21] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:21] <==    Updates: 1
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 
+[TRACE] [2021-05-22 14:22] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:22] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:22] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:22] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:22] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:22] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:22] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:22] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:22] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:22] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:22] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:22] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:22] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:22] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:22] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:22] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:22] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:22] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:22] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:22] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:22] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:22] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:22] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:22] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:22] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:22] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:22] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:22] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:22] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:22] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:22] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:22] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:22] <==      Total: 31
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:22] <==    Updates: 1
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:22] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:22] <==        Row: 78, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:22] <==      Total: 1
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:22] <==    Updates: 1
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 
+[TRACE] [2021-05-22 14:22] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:22] <==        Row: 32
+[DEBUG] [2021-05-22 14:22] <==      Total: 1
+[DEBUG] [2021-05-22 14:22] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:22] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:22] <==    Updates: 1
+[DEBUG] [2021-05-22 14:23] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:23] ==> Parameters: 
+[TRACE] [2021-05-22 14:23] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:23] <==        Row: 31
+[DEBUG] [2021-05-22 14:23] <==      Total: 1
+[DEBUG] [2021-05-22 14:23] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:23] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:23] <==    Updates: 0
+[DEBUG] [2021-05-22 14:27] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:27] ==> Parameters: 
+[TRACE] [2021-05-22 14:27] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:27] <==        Row: 31
+[DEBUG] [2021-05-22 14:27] <==      Total: 1
+[DEBUG] [2021-05-22 14:27] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:27] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:27] <==    Updates: 0
+[DEBUG] [2021-05-22 14:27] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:27] ==> Parameters: 
+[TRACE] [2021-05-22 14:27] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:27] <==        Row: 31
+[DEBUG] [2021-05-22 14:27] <==      Total: 1
+[DEBUG] [2021-05-22 14:27] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:27] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:27] <==    Updates: 0
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 
+[TRACE] [2021-05-22 14:28] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:28] <==        Row: 31
+[DEBUG] [2021-05-22 14:28] <==      Total: 1
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:28] <==    Updates: 0
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 
+[TRACE] [2021-05-22 14:28] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:28] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 14:28] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 14:28] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 14:28] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 14:28] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 14:28] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 14:28] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 14:28] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 14:28] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 14:28] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 14:28] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 14:28] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 14:28] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 14:28] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 14:28] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 14:28] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 14:28] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 14:28] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 14:28] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 14:28] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 14:28] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 14:28] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 14:28] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 14:28] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 14:28] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 14:28] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 14:28] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 14:28] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 14:28] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 14:28] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 14:28] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 14:28] <==      Total: 31
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 14:28] <==    Updates: 1
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 14:28] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:28] <==        Row: 79, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 14:28] <==      Total: 1
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:28] <==    Updates: 1
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 
+[TRACE] [2021-05-22 14:28] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:28] <==        Row: 32
+[DEBUG] [2021-05-22 14:28] <==      Total: 1
+[DEBUG] [2021-05-22 14:28] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:28] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 14:28] <==    Updates: 1
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 
+[TRACE] [2021-05-22 16:30] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 16:30] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 16:30] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 16:30] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 16:30] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 16:30] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 16:30] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 16:30] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 16:30] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 16:30] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 16:30] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 16:30] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 16:30] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 16:30] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 16:30] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 16:30] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 16:30] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 16:30] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 16:30] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 16:30] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 16:30] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 16:30] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 16:30] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 16:30] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 16:30] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 16:30] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 16:30] <==        Row: 59, 3@3232, 123456, ������, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 16:30] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 16:30] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 16:30] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 16:30] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 16:30] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 16:30] <==      Total: 31
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 16:30] <==    Updates: 1
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 16:30] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 16:30] <==        Row: 80, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 16:30] <==      Total: 1
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 16:30] <==    Updates: 1
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 
+[TRACE] [2021-05-22 16:30] <==    Columns: count(*)
+[TRACE] [2021-05-22 16:30] <==        Row: 32
+[DEBUG] [2021-05-22 16:30] <==      Total: 1
+[DEBUG] [2021-05-22 16:30] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 16:30] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 16:30] <==    Updates: 1
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 
+[TRACE] [2021-05-22 16:35] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 16:35] <==        Row: 1, 1, 1, 1, 2021-05-17 12:05:18.0
+[TRACE] [2021-05-22 16:35] <==        Row: 2, test@test.co.kr, 0x1.cd15e59f3bbep-4, test, 2021-05-17 12:14:10.0
+[TRACE] [2021-05-22 16:35] <==        Row: 5, test4@test.co.kr, 4567, 1234, 2021-05-18 09:35:59.0
+[TRACE] [2021-05-22 16:35] <==        Row: 6, test5@test.co.kr, 1234, 1234, 2021-05-18 09:38:41.0
+[TRACE] [2021-05-22 16:35] <==        Row: 20, test6@test.co.kr, 4567, 1234, 2021-05-18 09:59:44.0
+[TRACE] [2021-05-22 16:35] <==        Row: 24, test8@test.co.kr, 1234, 1234, 2021-05-18 10:01:47.0
+[TRACE] [2021-05-22 16:35] <==        Row: 27, leeth1029@naver.com, 1, test, 2021-05-20 11:00:54.0
+[TRACE] [2021-05-22 16:35] <==        Row: 28, test, 1, test3, 2021-05-20 11:07:48.0
+[TRACE] [2021-05-22 16:35] <==        Row: 29, qwe@nav.com, 1, test4, 2021-05-20 11:09:11.0
+[TRACE] [2021-05-22 16:35] <==        Row: 30, 3@3, 1, test5, 2021-05-20 11:10:45.0
+[TRACE] [2021-05-22 16:35] <==        Row: 31, 9@6.com, 1, test6, 2021-05-20 11:16:10.0
+[TRACE] [2021-05-22 16:35] <==        Row: 32, join@test.com, 1, test1, 2021-05-20 11:56:28.0
+[TRACE] [2021-05-22 16:35] <==        Row: 33, testtest@, 1, test9, 2021-05-21 10:14:57.0
+[TRACE] [2021-05-22 16:35] <==        Row: 34, test44@mgi.com, 1, test10, 2021-05-21 11:32:46.0
+[TRACE] [2021-05-22 16:35] <==        Row: 35, joi1n@test.com, 1, test, 2021-05-21 11:35:58.0
+[TRACE] [2021-05-22 16:35] <==        Row: 36, joi2n@test.com, 1, test, 2021-05-21 11:37:55.0
+[TRACE] [2021-05-22 16:35] <==        Row: 37, 3@32, 1, test, 2021-05-21 11:38:50.0
+[TRACE] [2021-05-22 16:35] <==        Row: 38, qwe@nav.com1, 1, test, 2021-05-21 11:40:40.0
+[TRACE] [2021-05-22 16:35] <==        Row: 39, qwe@nav.com12, 1, test12, 2021-05-21 11:42:51.0
+[TRACE] [2021-05-22 16:35] <==        Row: 40, 3@321, 1, test, 2021-05-21 11:46:12.0
+[TRACE] [2021-05-22 16:35] <==        Row: 41, 3@3210, 1, test, 2021-05-21 11:47:33.0
+[TRACE] [2021-05-22 16:35] <==        Row: 42, leeth1029@n.com, 1, test, 2021-05-21 12:40:47.0
+[TRACE] [2021-05-22 16:35] <==        Row: 43, test44@ww.co, 11, test, 2021-05-21 14:22:49.0
+[TRACE] [2021-05-22 16:35] <==        Row: 44, 3@323, 1, test, 2021-05-21 14:40:44.0
+[TRACE] [2021-05-22 16:35] <==        Row: 47, 9@6.com22, 123456, test, 2021-05-21 15:32:33.0
+[TRACE] [2021-05-22 16:35] <==        Row: 59, 3@3232, 123456, 이태훈, 2021-05-21 20:19:11.0
+[TRACE] [2021-05-22 16:35] <==        Row: 61, qwe@nav.com2, 123456, test, 2021-05-22 11:42:56.0
+[TRACE] [2021-05-22 16:35] <==        Row: 62, 3@3234, 123445, 123, 2021-05-22 11:43:54.0
+[TRACE] [2021-05-22 16:35] <==        Row: 63, 3@3333, 123456, test, 2021-05-22 11:47:50.0
+[TRACE] [2021-05-22 16:35] <==        Row: 64, 3@333333, 123456, test, 2021-05-22 11:49:19.0
+[TRACE] [2021-05-22 16:35] <==        Row: 65, 3@312121212, 123456, test, 2021-05-22 13:39:45.0
+[DEBUG] [2021-05-22 16:35] <==      Total: 31
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
+[DEBUG] [2021-05-22 16:35] <==    Updates: 1
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 22@22.co.kr(String)
+[TRACE] [2021-05-22 16:35] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 16:35] <==        Row: 81, 22@22.co.kr, 123, test, null
+[DEBUG] [2021-05-22 16:35] <==      Total: 1
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String)
+[DEBUG] [2021-05-22 16:35] <==    Updates: 1
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 
+[TRACE] [2021-05-22 16:35] <==    Columns: count(*)
+[TRACE] [2021-05-22 16:35] <==        Row: 32
+[DEBUG] [2021-05-22 16:35] <==      Total: 1
+[DEBUG] [2021-05-22 16:35] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 16:35] ==> Parameters: 22@22.co.kr(String)
+[DEBUG] [2021-05-22 16:35] <==    Updates: 1
