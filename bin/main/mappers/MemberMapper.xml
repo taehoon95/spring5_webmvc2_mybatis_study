@@ -57,4 +57,11 @@
 			<include refid="whereSQL"></include>
 			 <!-- where email = #{email} -->
 	</update>
+	
+	<!-- 날짜로 회원검색 -->
+ 	<select id="selectByRegdate" parameterType="ListCommand" resultMap="ResMember">
+		<include refid="selectSQL"/>
+		where regdate between #{from} and #{to} 
+		 order by regdate desc
+	</select> 
 </mapper>
