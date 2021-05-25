@@ -1,75 +1,16 @@
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 
-[TRACE] [2021-05-24 15:54] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 15:54] <==        Row: 66, test@test.co.kr, null, test, 2021-05-24 10:08:35.0
-[TRACE] [2021-05-24 15:54] <==        Row: 67, test1@test.co.kr, 123456, test, 2021-05-24 11:02:02.0
-[DEBUG] [2021-05-24 15:54] <==      Total: 2
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String)
-[TRACE] [2021-05-24 15:54] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 15:54] <==        Row: 68, 22@22.co.kr, 123, test, null
-[DEBUG] [2021-05-24 15:54] <==      Total: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: update member SET name = ?, password = ?, email = ? WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String), 22@22.co.kr(String)
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select count(*) from member
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 
-[TRACE] [2021-05-24 15:54] <==    Columns: count(*)
-[TRACE] [2021-05-24 15:54] <==        Row: 3
-[DEBUG] [2021-05-24 15:54] <==      Total: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: delete from member WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String)
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 
-[TRACE] [2021-05-24 15:54] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 15:54] <==        Row: 66, test@test.co.kr, null, test, 2021-05-24 10:08:35.0
-[TRACE] [2021-05-24 15:54] <==        Row: 67, test1@test.co.kr, 123456, test, 2021-05-24 11:02:02.0
-[DEBUG] [2021-05-24 15:54] <==      Total: 2
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String)
-[TRACE] [2021-05-24 15:54] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 15:54] <==        Row: 69, 22@22.co.kr, 123, test, null
-[DEBUG] [2021-05-24 15:54] <==      Total: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: update member SET name = ?, password = ?, email = ? WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String), 22@22.co.kr(String)
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: select count(*) from member
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 
-[TRACE] [2021-05-24 15:54] <==    Columns: count(*)
-[TRACE] [2021-05-24 15:54] <==        Row: 3
-[DEBUG] [2021-05-24 15:54] <==      Total: 1
-[DEBUG] [2021-05-24 15:54] ==>  Preparing: delete from member WHERE email = ?
-[DEBUG] [2021-05-24 15:54] ==> Parameters: 22@22.co.kr(String)
-[DEBUG] [2021-05-24 15:54] <==    Updates: 1
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 
-[TRACE] [2021-05-24 16:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 16:09] <==        Row: 66, test@test.co.kr, null, test, 2021-05-24 10:08:35.0
-[TRACE] [2021-05-24 16:09] <==        Row: 67, test1@test.co.kr, 123456, test, 2021-05-24 11:02:02.0
-[DEBUG] [2021-05-24 16:09] <==      Total: 2
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 22@22.co.kr(String), 123(String), test(String), null
-[DEBUG] [2021-05-24 16:09] <==    Updates: 1
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 22@22.co.kr(String)
-[TRACE] [2021-05-24 16:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
-[TRACE] [2021-05-24 16:09] <==        Row: 70, 22@22.co.kr, 123, test, null
-[DEBUG] [2021-05-24 16:09] <==      Total: 1
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: update member SET name = ?, password = ?, email = ? WHERE email = ?
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 2222(String), 222(String), 22@22.co.kr(String), 22@22.co.kr(String)
-[DEBUG] [2021-05-24 16:09] <==    Updates: 1
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: select count(*) from member
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 
-[TRACE] [2021-05-24 16:09] <==    Columns: count(*)
-[TRACE] [2021-05-24 16:09] <==        Row: 3
-[DEBUG] [2021-05-24 16:09] <==      Total: 1
-[DEBUG] [2021-05-24 16:09] ==>  Preparing: delete from member WHERE email = ?
-[DEBUG] [2021-05-24 16:09] ==> Parameters: 22@22.co.kr(String)
-[DEBUG] [2021-05-24 16:09] <==    Updates: 1
+[DEBUG] [2021-05-25 13:27] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where regdate between ? and ? order by regdate desc
+[DEBUG] [2021-05-25 13:27] ==> Parameters: 2021-05-20T00:00(LocalDateTime), 2021-05-21T00:00(LocalDateTime)
+[DEBUG] [2021-05-25 13:27] <==      Total: 0
+[DEBUG] [2021-05-25 13:27] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where regdate between ? and ? order by regdate desc
+[DEBUG] [2021-05-25 13:27] ==> Parameters: 2021-05-20T00:00(LocalDateTime), 2021-05-21T00:00(LocalDateTime)
+[DEBUG] [2021-05-25 13:27] <==      Total: 0
+[DEBUG] [2021-05-25 13:28] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where regdate between ? and ? order by regdate desc
+[DEBUG] [2021-05-25 13:28] ==> Parameters: 2021-05-20T00:00(LocalDateTime), 2021-05-25T00:00(LocalDateTime)
+[TRACE] [2021-05-25 13:28] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-25 13:28] <==        Row: 67, test1@test.co.kr, 123456, test, 2021-05-24 11:02:02.0
+[DEBUG] [2021-05-25 13:28] <==      Total: 1
+[DEBUG] [2021-05-25 16:45] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where regdate between ? and ? order by regdate desc
+[DEBUG] [2021-05-25 16:45] ==> Parameters: 2021-05-20T00:00(LocalDateTime), 2021-05-25T00:00(LocalDateTime)
+[TRACE] [2021-05-25 16:45] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-25 16:45] <==        Row: 67, test1@test.co.kr, 123456, test, 2021-05-24 11:02:02.0
+[DEBUG] [2021-05-25 16:45] <==      Total: 1

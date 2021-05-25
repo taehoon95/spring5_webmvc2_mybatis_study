@@ -17,7 +17,6 @@ import spring5_webmvc2_mybatis_study.config.ContextRoot;
 @ContextConfiguration(classes = {ContextRoot.class})
 @WebAppConfiguration
 public class ContextDataSourceTest {
-
 	
 	//@After
 	public void tearDown() throws Exception {
