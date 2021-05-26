@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Import;
 @ComponentScan(basePackages = {
 	    "spring5_webmvc2_mybatis_study.service"
 	  , "spring5_webmvc2_mybatis_study.controller"
+	  , "spring5_webmvc_study.common"
 		})
 public class ContextRoot {
 	
