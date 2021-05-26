@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import spring5_webmvc2_mybatis_study.dto.ListCommand;
 import spring5_webmvc2_mybatis_study.dto.Member;
-import spring5_webmvc2_mybatis_study.mapper.MemberMapper;
+import spring5_webmvc2_mybatis_study.service.MemberListService;
 
 @Controller
 public class ListController {
 
 	@Autowired
-	private MemberMapper memberMapper;
+	private MemberListService memberListService;
 	
 	@RequestMapping("/members")
 	public String list(@Valid @ModelAttribute("cmd") ListCommand listCommand,Errors errors , Model model) {
@@ -27,7 +27,7 @@ public class ListController {
 			return "member/memberList";
 		}
 		if(listCommand.getFrom() != null & listCommand.getTo() != null) {
-			List<Member> members = memberMapper.selectByRegdate(listCommand);
+			List<Member> members = memberListService.showMemberByRegdate(listCommand);
 			model.addAttribute("members", members);
 		}
 		return "member/memberList";
