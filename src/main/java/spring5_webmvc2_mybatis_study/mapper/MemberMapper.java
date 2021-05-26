@@ -23,4 +23,6 @@ public interface MemberMapper {
 	int countMember();
 	
 	List<Member> selectByRegdate(ListCommand listCommand);
+	
+	Member selectById(Long memId);
 }

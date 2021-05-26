@@ -92,4 +92,13 @@ public class MemberDaoTest {
 		Assert.assertNotNull(list);
 		System.out.println(list);
 	}
+	
+	@Test
+	public void test08SelectById() {
+		System.out.println("test08SelectById");
+		Long lo = (long) 67;
+		Member member = mapper.selectById(lo);
+		Assert.assertNotNull(member);
+		System.out.println(member);
+	}
 }

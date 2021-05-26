@@ -69,5 +69,9 @@ dependencies {
 // hibernate-validator
 	implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.0.Final'
 
+// jackson-dataformat-xml
+	implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.10.1'
+
+
     testImplementation 'junit:junit:4.13'
 }
