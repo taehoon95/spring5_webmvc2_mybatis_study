@@ -20,4 +20,6 @@ public class MemberListServiceImpl implements MemberListService {
 		return memberMapper.selectByRegdate(listCommand);
 	}
 
+
+
 }

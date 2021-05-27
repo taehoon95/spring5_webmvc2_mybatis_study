@@ -1,5 +1,7 @@
 package spring5_webmvc2_mybatis_study.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,9 @@ public class MemberDetailServiceImpl implements MemberDetailService{
 	public Member showById(Long memId) {
 		return memberMapper.selectById(memId);
 	}
-	
+	@Override
+	public List<Member> showMembers() {
+		return memberMapper.selectAll();
+	}
 	
 }

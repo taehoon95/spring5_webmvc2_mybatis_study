@@ -9,5 +9,6 @@ import spring5_webmvc2_mybatis_study.dto.Member;
 
 @Service
 public interface MemberListService {
+	
 	List<Member> showMemberByRegdate(ListCommand listCommand);
 }
