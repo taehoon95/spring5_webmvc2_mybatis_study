@@ -8,7 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import spring5_webmvc2_mybatis_study.dto.Member;
 import spring5_webmvc2_mybatis_study.exception.MemberNotFoundException;
-import spring5_webmvc2_mybatis_study.mapper.MemberMapper;
 import spring5_webmvc2_mybatis_study.service.MemberDetailService;
 
 @Controller

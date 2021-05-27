@@ -2,8 +2,11 @@ package spring5_webmvc2_mybatis_study.dto;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import spring5_webmvc2_mybatis_study.exception.WrongIdPasswordException;
 
+@JsonIgnoreProperties({"password"})
 public class Member {
 
 	private Long id;

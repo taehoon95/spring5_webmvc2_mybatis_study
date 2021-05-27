@@ -11,23 +11,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import spring5_webmvc2_mybatis_study.dto.Member;
-import spring5_webmvc2_mybatis_study.service.MemberDetailService;
-import spring5_webmvc2_mybatis_study.service.MemberListService;
+import spring5_webmvc2_mybatis_study.service.RestMemberService;
 
 @RestController
 public class RestMemberController {
 
 	@Autowired
-	private MemberDetailService memberService;
+	private RestMemberService restMemberService;
 	
 	@GetMapping("/api/members")
 	public List<Member> members(){
-		return memberService.showMembers();
+		return restMemberService.showMembers();
 	}
 	
 	@GetMapping("/api/members/{id}")
 	public Member member(@PathVariable Long id, HttpServletResponse response) throws IOException{
-		Member member = memberService.showById(id);
+		Member member = restMemberService.showById(id);
 		if(member == null) {
 			response.sendError(HttpServletResponse.SC_NOT_FOUND);
 			return null;
