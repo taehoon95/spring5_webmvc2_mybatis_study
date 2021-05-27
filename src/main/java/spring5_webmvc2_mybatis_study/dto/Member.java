@@ -14,10 +14,8 @@ public class Member {
 	@JsonIgnore
 	private String password;
 	private String name;
-	@JsonFormat(pattern = "yyyyMMddHHmmss")
+//	@JsonFormat(pattern = "yyyyMMddHHmmss")
 	private LocalDateTime registerDateTime;
-
-	
 	
 	public Member(String email, String password, String name) {
 		this.email = email;
@@ -70,17 +68,14 @@ public class Member {
 		this.password = newPassword;
 	}
 
-	
 	public boolean matchPassword(String password) {
 		return this.password.equals(password);
 	}
-
 	
 	@Override
 	public String toString() {
 		return String.format("Member id=%s, email=%s, password=%s, name=%s, registerDateTime=%s", id, email, password,
 				name, registerDateTime);
 	}
-	
 	
 }
